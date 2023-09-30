@@ -10,6 +10,10 @@ xhr.onload = function () {
     // Parsear el contenido del archivo JSON
     const data = JSON.parse(xhr.responseText);
 
+    // Crear un contenedor para la tabla
+    const tableContainer = document.createElement('div');
+    tableContainer.className = 'tabla-container';
+
     // Crear una tabla HTML
     const table = document.createElement('table');
 
@@ -37,46 +41,14 @@ xhr.onload = function () {
       table.appendChild(row);
     });
 
-    // Agregar la tabla al div de resultados
-    resultadosDiv.appendChild(table);
+    // Agregar la tabla al contenedor
+    tableContainer.appendChild(table);
+
+    // Agregar el contenedor al div de resultados
+    resultadosDiv.appendChild(tableContainer);
   } else {
     resultadosDiv.textContent = 'Error al cargar el archivo JSON.';
   }
 };
 
 xhr.send();
-
-// ... (código anterior)
-
-// Agregar estilos CSS en línea
-table.style.borderCollapse = 'collapse';
-table.style.width = '100%';
-table.style.border = '1px solid #ddd';
-
-// Aplicar estilos a las celdas (th y td)
-const cells = table.querySelectorAll('th, td');
-cells.forEach(function (cell) {
-  cell.style.padding = '8px';
-  cell.style.border = '1px solid #ddd';
-});
-
-// Estilos para la fila de encabezado (cabecera de la tabla)
-headerRow.style.backgroundColor = '#f2f2f2';
-
-// Estilos para las filas impares
-const rows = table.querySelectorAll('tr:nth-child(odd)');
-rows.forEach(function (row) {
-  row.style.backgroundColor = '#f9f9f9';
-});
-
-// Estilos para las filas pares
-const evenRows = table.querySelectorAll('tr:nth-child(even)');
-evenRows.forEach(function (row) {
-  row.style.backgroundColor = '#fff';
-});
-
-// Agregar la tabla al div de resultados
-resultadosDiv.appendChild(table);
-
-// ...
-

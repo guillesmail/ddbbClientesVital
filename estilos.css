@@ -78,20 +78,24 @@ body {
 }
 
 .mostrarResultados{
-    border: solid red;
+   /*  border: solid red; */
+    
 }
 
 /* Estilos para la tabla */
 table {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
+  /* border-collapse: collapse; */
+ /*  width: 100%; */
+ /*  border: 1px solid #ddd;
+  max-width: 100%;
+  overflow-x: auto; */
+
 }
 
 /* Estilos para las celdas (th y td) */
 th, td {
-  padding: 8px;
-  border: 1px solid #ddd;
+  padding: 2px;
+  border: 5px solid #ddd;
 }
 
 /* Estilos para la fila de encabezado (cabecera de la tabla) */
@@ -107,4 +111,11 @@ tr:nth-child(odd) {
 /* Estilos para las filas pares */
 tr:nth-child(even) {
   background-color: #fff;
+}
+
+
+/* Estilos para el contenedor de la tabla */
+.tabla-container {
+  max-width: 100%;
+  overflow-x: auto;
 }
