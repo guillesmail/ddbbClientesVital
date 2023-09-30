@@ -1,0 +1,11 @@
+{
+  "name": "clientes_ddbb",
+  "version": "1.0.0",
+  "description": "base datos clientes vital",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guille S. Ojeda",
+  "license": "ISC"
+}
