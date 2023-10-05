@@ -7,5 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Guille S. Ojeda",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillesmail/ddbbClientesVital.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guillesmail/ddbbClientesVital/issues"
+  },
+  "homepage": "https://github.com/guillesmail/ddbbClientesVital#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

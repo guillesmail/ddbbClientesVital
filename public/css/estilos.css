@@ -1,0 +1,147 @@
+:root{
+    --negro: rgb(29, 36, 45);
+    --grisInput: rgb(249, 251, 252);
+    --grisFooter: rgb(234, 238, 242);
+    --grisIcon: rgb(242, 243, 247);
+    --grisPlace: rgb(161, 168, 175);
+    --grisOscuro: rgb(66, 75, 86);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--negro);
+    font-weight: 500;
+    /* font-family: 'Heebo', sans-serif; */
+    /* font-family: 'Libre Franklin', sans-serif; */
+}
+/* ------------------------- */
+
+
+.navbar{
+    display: flex;
+    background-color: black;
+    align-items: baseline;
+    justify-content: flex-end;
+    
+
+
+}
+
+.navbar p{
+    color: aliceblue;
+    margin: 1rem;
+    
+   
+    
+}
+
+.navbarBtn{
+    margin-right: 2rem;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal con disposición de columna */
+.contenedor {
+  
+  
+  
+}
+
+.btn{
+    font-family: arial;
+    font-weight: bold;
+    color: #3B3A4A !important;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    margin-left: 2rem;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+    
+}
+
+/* Estilos para la primera división (Carga de Archivos) */
+.carga {
+    background-color: #F0E68C; /* Color pastel para la primera división */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para la segunda división (Exportar Archivos) */
+.exportar {
+    background-color: #98FB98; /* Color pastel para la segunda división */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para la tercera división (Resultados) */
+.resultados {
+    display: flex;
+    flex-direction: column;
+    background-color: #DDA0DD; /* Color pastel para la tercera división */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mostrarResultados{
+   /*  border: solid red; */
+    
+}
+
+/* Estilos para la tabla */
+table {
+  /* border-collapse: collapse; */
+ /*  width: 100%; */
+ /*  border: 1px solid #ddd;
+  max-width: 100%;
+  overflow-x: auto; */
+
+}
+
+/* Estilos para las celdas (th y td) */
+th, td {
+  padding: 2px;
+  border: 5px solid #ddd;
+}
+
+/* Estilos para la fila de encabezado (cabecera de la tabla) */
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para las filas impares */
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Estilos para las filas pares */
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+
+/* Estilos para el contenedor de la tabla */
+.tabla-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
